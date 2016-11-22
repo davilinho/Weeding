@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@mipmap/ic_home_white_24dp"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/date"
+        android:icon="@mipmap/ic_date_range_white_24dp"
+        android:title="Fecha" />
+
+    <item
+        android:id="@+id/map"
+        android:icon="@mipmap/ic_map_white_24dp"
+        android:title="Lugar" />
+
+    <item
+        android:id="@+id/music"
+        android:icon="@mipmap/ic_music_note_white_24dp"
+        android:title="Música" />
+
+    <item
+        android:id="@+id/confirm"
+        android:icon="@mipmap/ic_check_circle_white_24dp"
+        android:title="Confirmación" />
+
+</menu>
