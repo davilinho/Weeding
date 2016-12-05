@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "714342878641",
+    "project_id": "firebase-david-y-sandra"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:714342878641:android:1b8a9c6ad1a96513",
+        "android_client_info": {
+          "package_name": "com.davidroid.wedding"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAI1Iig79FURmBfMHMN9uJByxAS39AR_I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-88499507-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -8,4 +8,53 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="Title.Bold" parent="Title">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Title.Italic" parent="Title">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="Body">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="Body.Bold" parent="Body">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Body.Bold.Italic" parent="Body.Bold">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="Form">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/lightPink</item>
+        <item name="android:textColorHint">@color/lightPink</item>
+    </style>
+
+    <style name="Form.Bold" parent="Form">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="HorizontalLineSeparator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
 </resources>
