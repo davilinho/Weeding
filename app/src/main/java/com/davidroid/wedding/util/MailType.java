@@ -6,6 +6,8 @@ package com.davidroid.wedding.util;
 
 public enum MailType {
 
+    CONTACT,
+
     MUSIC,
 
     CONFIRMATION

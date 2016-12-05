@@ -11,7 +11,7 @@ import android.view.MenuItem;
 
 import com.davidroid.wedding.fragment.ConfirmationFragment;
 import com.davidroid.wedding.fragment.DateFragment;
-import com.davidroid.wedding.fragment.MainFragment;
+import com.davidroid.wedding.fragment.ContactFragment;
 import com.davidroid.wedding.fragment.MapFragment;
 import com.davidroid.wedding.fragment.MusicFragment;
 import com.davidroid.weeding.R;
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         BottomNavigationView bottomNavigation = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         fragmentManager = getSupportFragmentManager();
-        fillFragment(new MainFragment());
+        fillFragment(new ContactFragment());
 
         bottomNavigation.setOnNavigationItemSelectedListener(
                 new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -48,9 +48,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void handleBottomNavigationItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.home:
-                trackerView(MainFragment.class.getName());
-                fragment = new MainFragment();
+            case R.id.contact:
+                trackerView(ContactFragment.class.getName());
+                fragment = new ContactFragment();
                 break;
             case R.id.date:
                 trackerView(DateFragment.class.getName());

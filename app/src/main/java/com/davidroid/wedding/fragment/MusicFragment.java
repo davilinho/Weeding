@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.davidroid.weeding.BuildConfig;
 import com.davidroid.weeding.R;
 import com.davidroid.wedding.util.MailManager;
 import com.davidroid.wedding.util.MailType;
@@ -45,7 +46,8 @@ public class MusicFragment extends Fragment {
                             .setMessage("¿Deseas escuchar/bailar esta canción?\n\n\n" + song.getText())
                             .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
-                                    new MailManager(getActivity(), MailType.MUSIC).sendMail(song.getText().toString());
+                                    new MailManager(getActivity(), MailType.MUSIC).mailTo(BuildConfig.MAIL_DAVID,
+                                            song.getText().toString());
                                 }
                             })
                             .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {

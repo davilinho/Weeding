@@ -13,6 +13,7 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 
 import com.davidroid.wedding.util.MailType;
+import com.davidroid.weeding.BuildConfig;
 import com.davidroid.weeding.R;
 import com.davidroid.wedding.util.MailManager;
 
@@ -61,7 +62,8 @@ public class ConfirmationFragment extends Fragment {
                             .setMessage("¿Deseas enviar esta confirmación?\n\n\n" + text)
                             .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
-                                    new MailManager(getActivity(), MailType.CONFIRMATION).sendMail(text);
+                                    new MailManager(getActivity(), MailType.CONFIRMATION).mailTo(BuildConfig.MAIL_DAVID,
+                                            text);
                                 }
                             })
                             .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {

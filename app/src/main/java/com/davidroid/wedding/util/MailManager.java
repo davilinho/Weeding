@@ -18,11 +18,13 @@ public class MailManager {
         this.mailType = mailType;
     }
 
-    public void sendMail(String message) {
+    public void mailTo(String destination, String message) {
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("plain/text");
-        intent.putExtra(Intent.EXTRA_EMAIL  , new String[]{"davilinho@gmail.com"});
-        if (MailType.MUSIC == mailType) {
+        intent.putExtra(Intent.EXTRA_EMAIL, new String[] { destination });
+        if (MailType.CONTACT == mailType) {
+            intent.putExtra(Intent.EXTRA_SUBJECT, "Contacto");
+        } else if (MailType.MUSIC == mailType) {
             intent.putExtra(Intent.EXTRA_SUBJECT, "Música");
         } else {
             intent.putExtra(Intent.EXTRA_SUBJECT, "Confirmación");
