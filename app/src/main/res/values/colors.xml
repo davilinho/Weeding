@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#A20A7F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="lightPink">#FFFFC2D7</color>
+
+    <color name="black_overlay">#66000000</color>
 </resources>
