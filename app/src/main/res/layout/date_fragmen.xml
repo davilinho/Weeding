@@ -40,7 +40,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="El enlace se celebrará en el Ajuntamiento de Terrassa, a las 17:00h del 13 de Mayo de 2017"
+                        android:text="El enlace se celebrará en el Ayuntamiento de Terrassa, a las 17:00h del 13 de Mayo de 2017"
                         style="@style/Body"
                         android:gravity="center"
                         android:padding="16dp"/>
