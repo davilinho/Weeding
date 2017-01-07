@@ -56,7 +56,7 @@
                         android:id="@+id/song"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Introduce el título de la canción, y a ser posible, también el intérprete"
+                        android:hint="Introduce aquí el título / intérprete de la canción"
                         android:padding="8dp"
                         style="@style/Form"
                         android:lines="2"/>
